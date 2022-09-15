@@ -1,0 +1,19 @@
+IDENTIFICATION DIVISION.
+PROGRAM-ID. HELLO_KRUITBOSCH.
+
+DATA DIVISION.
+   WORKING-STORAGE SECTION.
+   01 counter pic 9(1) VALUE 0. 
+
+PROCEDURE DIVISION.
+    MAIN-P.
+    PERFORM LOOP 5 TIMES.
+    STOP RUN.
+
+LOOP.
+   IF FUNCTION MOD (counter, 2) = 0
+      DISPLAY 'Hallo Kruitbosch'
+   ELSE
+      DISPLAY 'Doei Kruitbosch'
+   END-IF.
+      ADD 1 TO counter.
