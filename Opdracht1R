@@ -1,0 +1,14 @@
+i <- 0
+x <- -8
+
+if (x > 0){
+  for (i in 1:x) {
+    if (i%%2)
+      print("Hallo Kruitbosch")
+    else 
+      print("Doei Kruitbosch")
+    i <- i + 1
+  }
+} else
+	print("Getal moet hoger dan 0 zijn!!!!")
+
